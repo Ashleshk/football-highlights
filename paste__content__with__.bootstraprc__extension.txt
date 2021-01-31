@@ -1,0 +1,23 @@
+{
+  "bootstrapVersion": 4,
+  "useFlexbox": true,
+
+  "styleLoaders": ["style-loader", "css-loader", "sass-loader"],
+  "appStyles": "./src/sass/app.scss",
+  "styles": {
+    "mixins": true,
+    "normalize": true,
+    "print": true,
+    "reboot": true,
+    "utilities": true,
+    "navbar": true,
+    "type": true,
+    "grid": true,
+    "modal": true
+  },
+
+  "scripts": {
+    "modal": true,
+    "util": true
+  }
+}
