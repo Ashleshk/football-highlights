@@ -18,6 +18,7 @@ const fetchTeams = () => $.ajax({
     .then(firstTeam => console.log(firstTeam))
     .always(() => console.log('do some cleanup'))
 
+
 const attachEvents = () => {
     const $navItems = $('.nav-item')
     $navItems.on('click', (e) => {
@@ -28,6 +29,7 @@ const attachEvents = () => {
     $navItems.on('mouseenter', () => console.log(' mouse enter'))
     $navItems.on('mouseleave', () => console.log(' mouse leave'))
 }
+
 
 const animateHeaderTitle = () => {
     const $headerTitle = $('.header__title')
