@@ -6,6 +6,7 @@ const fetchTeams = () => $.ajax({
     url: 'http://api.football-data.org/v1/competitions/398/teams',
     headers: {'X-Auth-Token': API_KEY}
 })
+
     .then(data => {
         renderTeamList(data.teams.slice(0, 5))
         const firstTeam = data.teams[0]
