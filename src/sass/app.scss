@@ -1,0 +1,21 @@
+.header__title {
+  position: relative;
+  padding: 2rem;
+  font-weight: 200;
+  font-size: 4rem;
+
+  @include media-breakpoint-up(md) {
+    font-size: 5rem;
+    padding: 3rem;
+  }
+}
+
+.slideshow__wrapper {
+  position: relative;
+}
+
+.slideshow__item:not(:first-child) {
+  position: absolute;
+  top: 0;
+  display: none;
+}
