@@ -30,7 +30,6 @@ const attachEvents = () => {
     $navItems.on('mouseleave', () => console.log(' mouse leave'))
 }
 
-
 const animateHeaderTitle = () => {
     const $headerTitle = $('.header__title')
     $headerTitle.css({ 'top': '-80px' })
