@@ -18,7 +18,6 @@ const fetchTeams = () => $.ajax({
     .then(firstTeam => console.log(firstTeam))
     .always(() => console.log('do some cleanup'))
 
-
 const attachEvents = () => {
     const $navItems = $('.nav-item')
     $navItems.on('click', (e) => {
