@@ -37,15 +37,12 @@ const animateHeaderTitle = () => {
     $.when($headerTitle).done(() => console.log('ANIMATION COMPLETED TWICE'))
 }
 
-
 const createTeamItemTpl = (name, id) => `
     <li class="nav-item" data-id="${id}">
         <a class="nav-link" href="#">${name}</a>
     </li>
 
-    `
-
-    
+    `   
 const createTeamListTpl = teamList =>
     teamList.map(team => {
         const href = team._links.self.href
