@@ -46,3 +46,5 @@ const createTeamListTpl = teamList =>
         const href = team._links.self.href
         return createTeamItemTpl(team.name, href.split('teams/')[1])
     })
+
+const renderTeamList = teamList => $('#team-list').html(createTeamListTpl(teamList))
