@@ -35,3 +35,9 @@ const animateHeaderTitle = () => {
         .animate({ 'top': '0' }, 2000, 'swing', () => console.log('ANIMATION COMPLETED'))
     $.when($headerTitle).done(() => console.log('ANIMATION COMPLETED TWICE'))
 }
+
+const createTeamItemTpl = (name, id) => `
+    <li class="nav-item" data-id="${id}">
+        <a class="nav-link" href="#">${name}</a>
+    </li>
+    `   
