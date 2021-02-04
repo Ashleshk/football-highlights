@@ -41,3 +41,8 @@ const createTeamItemTpl = (name, id) => `
         <a class="nav-link" href="#">${name}</a>
     </li>
     `   
+const createTeamListTpl = teamList =>
+    teamList.map(team => {
+        const href = team._links.self.href
+        return createTeamItemTpl(team.name, href.split('teams/')[1])
+    })
