@@ -17,3 +17,10 @@ const fetchTeams = () => $.ajax({
     }, () => console.log('fail'))
     .then(firstTeam => console.log(firstTeam))
     .always(() => console.log('do some cleanup'))
+
+const attachEvents = () => {
+    const $navItems = $('.nav-item')
+    $navItems.on('click', (e) => {
+        const id = $(e.currentTarget).data('id')
+        fetchPlayerList(id)
+    })
