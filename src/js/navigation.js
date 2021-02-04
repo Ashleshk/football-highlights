@@ -24,3 +24,7 @@ const attachEvents = () => {
         const id = $(e.currentTarget).data('id')
         fetchPlayerList(id)
     })
+
+    $navItems.on('mouseenter', () => console.log(' mouse enter'))
+    $navItems.on('mouseleave', () => console.log(' mouse leave'))
+}
