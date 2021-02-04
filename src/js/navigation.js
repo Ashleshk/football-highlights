@@ -48,3 +48,8 @@ const createTeamListTpl = teamList =>
     })
 
 const renderTeamList = teamList => $('#team-list').html(createTeamListTpl(teamList))
+
+export const initNavigation = () => {
+    animateHeaderTitle()
+    fetchTeams()
+}
