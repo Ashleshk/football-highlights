@@ -28,3 +28,10 @@ const attachEvents = () => {
     $navItems.on('mouseenter', () => console.log(' mouse enter'))
     $navItems.on('mouseleave', () => console.log(' mouse leave'))
 }
+
+const animateHeaderTitle = () => {
+    const $headerTitle = $('.header__title')
+    $headerTitle.css({ 'top': '-80px' })
+        .animate({ 'top': '0' }, 2000, 'swing', () => console.log('ANIMATION COMPLETED'))
+    $.when($headerTitle).done(() => console.log('ANIMATION COMPLETED TWICE'))
+}
